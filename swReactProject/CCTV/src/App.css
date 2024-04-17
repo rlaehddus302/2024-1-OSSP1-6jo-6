@@ -1,0 +1,31 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  background-color: #EFF8FD;
+  width: 100vw;
+}
+
+ul li img{
+  width: 6em;
+  height: 6em;
+}
+
+ul li div{
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-right: 70vw;
+}
+
+ul li a{
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 1em;
+}
+
+dialog h2{
+  
+}
