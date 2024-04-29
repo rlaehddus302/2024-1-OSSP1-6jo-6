@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcome {
+  background-color: #eff8fd;
+  border-radius: 1em;
+  width: 50dvw;
+}
+
+div .main {
+  font-size: 1.2em;
+  margin: 0.5em 0.5em;
+}
+
+.icu {
+  width: 15em;
+  height: 15em;
+}
+
+.button-group
+{
+  text-align: right;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1.0em 1.5em;
+  margin: 1em 2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 20%;
+}
+button:hover {
+  border-color: black;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
