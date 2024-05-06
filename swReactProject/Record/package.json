@@ -1,5 +1,5 @@
 {
-  "name": "cctv",
+  "name": "record",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "html5_rtsp_player": "^0.0.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
