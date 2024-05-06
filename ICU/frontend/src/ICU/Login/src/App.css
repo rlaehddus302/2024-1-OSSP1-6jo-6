@@ -1,0 +1,60 @@
+.display {
+  text-align: center;
+  background-color: #eff8fd;
+  width: 80dvw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3em;
+  color: blue;
+  font-weight: 800;
+  margin: 0;
+}
+
+.main {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+form {
+  margin-top: 1.5em;
+}
+
+input {
+  display: block;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  height: 2.0em;
+  width: 15em;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  height: 2.0em;
+  width: 15em;
+  font-family: inherit;
+  color: white;
+  background-color: rgb(66, 66, 249);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
