@@ -7,7 +7,7 @@ export default function Navbar()
             <li className='photo'>
                 <img src={icu} alt="no data" />
             </li>
-            <li className='icu'>
+            <li className='icu1'>
                 <div>ICU</div>
             </li>
             <li>
