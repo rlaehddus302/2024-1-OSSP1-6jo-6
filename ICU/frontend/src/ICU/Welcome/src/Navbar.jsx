@@ -3,21 +3,23 @@ import icu from '../public/공개SW 로고.png'
 export default function Navbar()
 {
     return(
-        <ul>
+        <ul className='navBar'>
             <li className='photo'>
+                <a href="welcome">
                 <img src={icu} alt="no data" />
+                </a>
             </li>
-            <li className='icu'>
+            <li className='icu1'>
                 <div>ICU</div>
             </li>
             <li>
-                <a href="">cctv 화면</a>
+                <a href="cctv">cctv 화면</a>
             </li>
             <li>
-                <a href="">기록</a>
+                <a href="record">기록</a>
             </li>
             <li>
-                <a href="">로그아웃</a>
+                <a href="welcome">메인</a>
             </li>
         </ul>
     )
