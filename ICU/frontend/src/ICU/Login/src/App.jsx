@@ -1,5 +1,5 @@
 import axios from 'axios'
-import './App.css'
+import classes from './App3.module.css'
 
 function Submit(event) {
   event.preventDefault();
@@ -47,15 +47,15 @@ function App() {
 
   return (
     <>
-      <section className='display'>
-        <div className='logIn'>
-          <p className='title'>Login</p>
+      <section className={classes.display}>
+        <div className={classes.logIn}>
+          <p className={classes.title}>Login</p>
           <p className='main'>아이디와 비밀번호를 입력하세요</p>
           <form onSubmit={Submit}>
-            <div className='id'>
+            <div className={classes.id}>
               <input type="text" id='id' placeholder='아이디' />
             </div>
-            <div className='password'>
+            <div className={classes.password}>
               <input type="password" id='password' placeholder='비밀번호' />
             </div>
             <button type = 'submit'>로그인</button>

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import classes from './Table.module.css'
 
 export default function Table()
 {
@@ -15,7 +16,7 @@ export default function Table()
     }
     return(
         <>
-            <table>
+            <table className={classes.table}>
                 <thead>
                     <tr>
                         <th scope="col">카메라</th>

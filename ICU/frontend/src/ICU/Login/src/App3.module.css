@@ -1,3 +1,10 @@
+
+
+.display h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
 .display {
   text-align: center;
   background-color: #eff8fd;
@@ -22,11 +29,11 @@
   font-size: 0.8em;
 }
 
-form {
+.display form {
   margin-top: 1.5em;
 }
 
-input {
+.display input {
   display: block;
   margin: 0.5em;
   border-radius: 0.5em;
@@ -35,7 +42,7 @@ input {
   width: 15em;
 }
 
-button {
+.display button {
   margin: 0.5em;
   border-radius: 0.5em;
   font-size: 1.2em;
@@ -47,7 +54,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+.display button:hover {
   border-color: #646cff;
 }
 
