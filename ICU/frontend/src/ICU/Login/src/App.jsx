@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
-import './App.css';
+import classes from './App3.module.css';
 import { useNavigate } from 'react-router-dom'
 
 function App() {
@@ -53,20 +53,22 @@ function App() {
   };
 
   return (
-    <section className='display'>
-      <div className='logIn'>
-        <p className='title'>Information</p>
-        <p className='main'>CCTV의 정보를 입력하세요</p>
-        <form onSubmit={submit}>
-          <div className='id'>
-            <input type="text" id='id' placeholder='IP' required />
-          </div>
-          <div className='password'>
-            <input type="text" id='password' placeholder='PORT' required />
-          </div>
-          <button type='submit'>저장</button>
-          <button type='button' onClick={edit_page}>수정</button>
-        </form>
+    <section className={classes.display}>
+      <div className={classes.logIn}>
+        <div className={classes.content}>
+          <h1 className={classes.title}>Information</h1>
+          <p className={classes.main}>CCTV의 정보를 입력하세요</p>
+          <form onSubmit={submit}>
+            <div className={classes.id}>
+              <input type="text" id='id' placeholder='IP' required />
+            </div>
+            <div className={classes.password}>
+              <input type="text" id='password' placeholder='PORT' required />
+            </div>
+            <button type='submit'>저장</button>
+            <button type='button' onClick={edit_page}>수정</button>
+          </form>
+        </div>
       </div>
     </section>
   );

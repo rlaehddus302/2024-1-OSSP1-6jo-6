@@ -1,7 +1,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './Navbar'
-import './App.css'
+import classes from './App.module.css'
 import Table from './Table'
 import { useNavigate } from 'react-router-dom'
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <section>
+      <section className={classes.section}>
         <div>
           <h1>CCTV 정보</h1>
           <div>

@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
+import classes from './Table.module.css'
 
 export default function Table() {
     const [content, setContent] = useState([]);
 
     // 컴포넌트 마운트 시 쿠키에서 데이터 로드
     useEffect(() => {
-        let data = JSON.parse(Cookies.get('IPandPORT') || '[]');
+        let data = JSON.parse(Cookies.get("IPandPORT") || "[]");
         // 새 데이터에 id 부여
         if (data.length > 0 && !data[0].id) {
             data = data.map((item, index) => ({ ...item, id: index + 1 }));
@@ -36,7 +37,7 @@ export default function Table() {
     }
 
     return (
-        <table>
+        <table className={classes.table}>
             <thead>
                 <tr>
                     <th scope="col">번호</th>

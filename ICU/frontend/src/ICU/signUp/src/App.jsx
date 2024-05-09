@@ -1,4 +1,4 @@
-import './App.css'
+import classes from './App1.module.css'
 import Input from './Input'
 import Header from './Header'
 import { useState } from 'react'
@@ -66,7 +66,7 @@ function App() {
     }
   }
   return (
-    <section>
+    <section className={classes.section}>
       <div>
         <Header></Header>
         <form onSubmit={handleSignUp}>
