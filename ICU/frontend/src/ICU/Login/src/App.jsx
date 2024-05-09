@@ -1,70 +1,77 @@
-import axios from 'axios'
-import classes from './App3.module.css'
-
-function Submit(event) {
-  event.preventDefault();
-  const UserData={
-    id:document.getElementById('id').value,
-    password:document.getElementById('password').value
-  };
-  axios.post('http://localhost:8000/login',UserData)
-  .then(response =>{
-    console.log('Token:',response.data);
-    alert("로그인 성공");
-  })
-  .catch(error =>console.error('Login error:',error));
-  alert("로그인 실패");
-}
-
-axios.interceptors.request.use(
-  config =>{
-    const token = localStorage.getItem('accessToken');
-    if(token){
-      config.headers['Authorization'] = 'Bearer '+token;
-    }
-    return config;
-  },
-  error =>{
-    return Promise.reject(error);
-  }
-);
-axios.interceptors.response.use(
-  response => response,
-  error =>{
-    if(error.response && error.response.status === 401){
-      localStorage.removeItem('accessToken');
-      window.location = '/login'
-    }
-    return Promise.reject(error);
-  }
-);
-
-
-
-
+import React, { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
+import classes from './App3.module.css';
+import { useNavigate } from 'react-router-dom'
 
 function App() {
+  let navigate = useNavigate();
+  function edit_page(){
+    navigate('/edit');
+  }
+  const [IPandPORT, setIPandPORT] = useState([]);
+
+  // 컴포넌트가 마운트될 때 한 번 쿠키에서 데이터를 불러옵니다.
+  useEffect(() => {
+    const data = JSON.parse(Cookies.get('IPandPORT') || '[]');
+    setIPandPORT(data);
+  }, []);
+
+  const submit = (e) => {
+    e.preventDefault();
+    const newIp = document.getElementById('id').value.trim();
+    const newPort = document.getElementById('password').value.trim();
+
+    // IP와 PORT 입력 검증
+    if (!newIp || isNaN(parseInt(newPort))) {
+      alert("유효한 IP 주소와 포트 번호를 입력해주세요.");
+      return;
+    }
+
+    let currentData = [...IPandPORT];
+    if (currentData.length >= 4) {
+      alert('저장 가능한 IP와 PORT 정보는 최대 4개입니다.');
+      return;
+    }
+
+    currentData.push({ ip: newIp, port: newPort });
+    Cookies.set('IPandPORT', JSON.stringify(currentData));
+    setIPandPORT(currentData); // 상태 업데이트
+    alert('저장되었습니다');
+  };
+
+  const show = () => {
+    const data = JSON.parse(Cookies.get('IPandPORT') || '[]');
+    if (data.length === 0) {
+      alert("저장된 IP와 PORT 정보가 없습니다.");
+      return;
+    }
+    let displayText = '저장된 모든 IP와 PORT:\n';
+    data.forEach((element, index) => {
+      displayText += `${index + 1}. IP: ${element.ip}, PORT: ${element.port}\n`;
+    });
+    alert(displayText);
+  };
 
   return (
-    <>
-      <section className={classes.display}>
-        <div className={classes.logIn}>
-          <p className={classes.title}>Login</p>
-          <p className='main'>아이디와 비밀번호를 입력하세요</p>
-          <form onSubmit={Submit}>
+    <section className={classes.display}>
+      <div className={classes.logIn}>
+        <div className={classes.content}>
+          <h1 className={classes.title}>Information</h1>
+          <p className={classes.main}>CCTV의 정보를 입력하세요</p>
+          <form onSubmit={submit}>
             <div className={classes.id}>
-              <input type="text" id='id' placeholder='아이디' />
+              <input type="text" id='id' placeholder='IP' required />
             </div>
             <div className={classes.password}>
-              <input type="password" id='password' placeholder='비밀번호' />
+              <input type="text" id='password' placeholder='PORT' required />
             </div>
-            <button type = 'submit'>로그인</button>
-            <div>계정이 없으신가요? <a href="signup">만들기</a></div>
+            <button type='submit'>저장</button>
+            <button type='button' onClick={edit_page}>수정</button>
           </form>
         </div>
-      </section>
-    </>
-  )
+      </div>
+    </section>
+  );
 }
 
-export default App
+export default App;

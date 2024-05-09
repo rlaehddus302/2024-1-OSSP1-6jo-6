@@ -1,25 +1,34 @@
 
 
 .display h1 {
-  font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  color: blue;
 }
 
 .display {
-  text-align: center;
-  background-color: #eff8fd;
-  width: 80dvw;
-  height: 80vh;
+  width: 100dvw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
-.title {
-  font-size: 3em;
-  color: blue;
-  font-weight: 800;
-  margin: 0;
+.display .logIn{
+  border-radius: 1.0em;
+  text-align: center;
+  background-color: #eff8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+  width: 40em;
+}
+
+.display .logIn .content div{
+  display: inline-block;
 }
 
 .main {
@@ -39,7 +48,7 @@
   border-radius: 0.5em;
   font-size: 1.2em;
   height: 2.0em;
-  width: 15em;
+  width: 20em;
 }
 
 .display button {
@@ -47,7 +56,7 @@
   border-radius: 0.5em;
   font-size: 1.2em;
   height: 2.0em;
-  width: 15em;
+  width: 20em;
   font-family: inherit;
   color: white;
   background-color: rgb(66, 66, 249);
@@ -57,11 +66,81 @@
 .display button:hover {
   border-color: #646cff;
 }
-
-.card {
-  padding: 2em;
+@media all and (min-width:650px) and (max-width:900px) {
+  .display .logIn{
+    border-radius: 1.0em;
+    text-align: center;
+    background-color: #eff8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    width: 30em;
+  }
+  .display h1 {
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    color: blue;
+  }
+  .display input {
+    display: block;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    height: 2.0em;
+    width: 17em;
+  }
+  .display button {
+    margin: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    height: 2.0em;
+    width: 17em;
+    font-family: inherit;
+    color: white;
+    background-color: rgb(66, 66, 249);
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media all and (min-width:300px) and (max-width:650px) {
+  .display .logIn{
+    border-radius: 1.0em;
+    text-align: center;
+    background-color: #eff8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+    width: 25em;
+  }
+  .display h1 {
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    font-size: 2.0em;
+    color: blue;
+  }
+  .display input {
+    display: block;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.0em;
+    height: 2.0em;
+    width: 13em;
+  }
+  .display button {
+    margin: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.0em;
+    height: 2.0em;
+    width: 13em;
+    font-family: inherit;
+    color: white;
+    background-color: rgb(66, 66, 249);
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
 }
+

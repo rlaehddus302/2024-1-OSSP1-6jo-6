@@ -40,13 +40,13 @@ export default function Navbar()
             <li className={classes.link}>
                 <a href="cctv">cctv 화면</a>
                 <a href="record">기록</a>
-                <a href="edit">cctv정보</a>
+                <a href="edit">cctv 정보</a>
             </li>
             <li className={classes.select}>
-                <select name="link" id="link-select" defaultValue="1" onChange={handleSelectChange}>
+                <select name="link" id="link-select" defaultValue="3" onChange={handleSelectChange}>
                     <option value={"1"}>cctv 화면</option>
                     <option value={"2"}>기록</option>
-                    <option value={"3"}>cctv정보</option>
+                    <option value={"3"}>cctv 정보</option>
                 </select>
             </li>
         </ul>

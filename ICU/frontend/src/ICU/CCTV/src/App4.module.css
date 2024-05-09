@@ -1,4 +1,8 @@
-
+section.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 ul.alarm{
   text-align: center;
@@ -33,11 +37,38 @@ ul.alarm li p .right{
   cursor: pointer;
 }
 
-@media all and (min-width:0px) and (max-width:700px) {
+video {
+  width: 640px; /* 너비를 640픽셀로 설정 */
+  height: 360px; /* 높이를 360픽셀로 설정 */
+  object-fit: cover; /* 비디오의 비율을 유지하면서 요소 크기에 맞게 조정 */
+}
+
+@media all and (min-width:600px) and (max-width:700px) {
   ul.alarm li p .subText{
     display: none;
   }
+  ul.alarm li{
+    text-align: center;
+    border: solid;
+    border-radius: 0.3em;
+    background-color: #ffc8c8;
+    border-color: red;
+    border-width: 0.1em;
+    margin: 1em;
+    width: 28em;
+  }
 
+  video {
+    width: 540px; /* 너비를 640픽셀로 설정 */
+    height: 260px; /* 높이를 360픽셀로 설정 */
+    object-fit: cover; /* 비디오의 비율을 유지하면서 요소 크기에 맞게 조정 */
+  }
+}
+
+@media all and (min-width:400px) and (max-width:600px) {
+  ul.alarm li p .subText{
+    display: none;
+  }
   ul.alarm li{
     text-align: center;
     border: solid;
@@ -47,5 +78,11 @@ ul.alarm li p .right{
     border-width: 0.1em;
     margin: 1em;
     width: 18em;
+  }
+
+  video {
+    width: 380px; /* 너비를 640픽셀로 설정 */
+    height: 260px; /* 높이를 360픽셀로 설정 */
+    object-fit: cover; /* 비디오의 비율을 유지하면서 요소 크기에 맞게 조정 */
   }
 }

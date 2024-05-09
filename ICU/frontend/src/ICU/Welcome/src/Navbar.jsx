@@ -20,7 +20,7 @@ export default function Navbar()
                 link('/record');
                 break;
             case '3':
-                link('/welcome');
+                link('/edit');
                 break;
             default:
                 // 기본 경로나 오류 처리
@@ -40,13 +40,14 @@ export default function Navbar()
             <li className={classes.link}>
                 <a href="cctv">cctv 화면</a>
                 <a href="record">기록</a>
-                <a href="welcome">메인</a>
+                <a href="edit">cctv 정보</a>
             </li>
             <li className={classes.select}>
-                <select name="link" id="link-select" defaultValue="3" onChange={handleSelectChange}>
+                <select name="link" id="link-select" onChange={handleSelectChange}>
+                    <option value={"0"}>메인</option>
                     <option value={"1"}>cctv 화면</option>
                     <option value={"2"}>기록</option>
-                    <option value={"3"}>메인</option>
+                    <option value={"3"}>cctv 정보</option>
                 </select>
             </li>
         </ul>
