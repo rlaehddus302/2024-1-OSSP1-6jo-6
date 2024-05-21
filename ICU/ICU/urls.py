@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from rest_framework_simplejwt.views import TokenObtainPairView
+import backend.views as views
+#from rest_framework_simplejwt.views import TokenObtainPairView
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('upload_video/', views.upload_and_process_video, name='upload_video'),
 ]
