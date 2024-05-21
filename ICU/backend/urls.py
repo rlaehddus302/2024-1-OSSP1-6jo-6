@@ -14,11 +14,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
-from rest_framework_simplejwt.views import TokenObtainPairView
-from .views import LoginView
+from .views import upload_and_process_video
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login/', LoginView.as_view(), name='login'),
+    path('upload_video/', upload_and_process_video, name='upload_video'),
 ]
