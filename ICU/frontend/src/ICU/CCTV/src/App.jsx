@@ -34,7 +34,7 @@ function App() {
           // 새로운 알림 추가
           const newAlarm = {
             id: alarm.length + 1,
-            camera: `1`,
+            camera: ``,
             message: data.message
           };
           setAlarm([...alarm, newAlarm]);
