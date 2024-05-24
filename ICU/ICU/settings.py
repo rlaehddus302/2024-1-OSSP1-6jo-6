@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'ICU.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -87,7 +87,7 @@ DATABASES = {
         'PORT': '3306', 
     }
 }
-
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -135,3 +135,30 @@ REST_FRAMEWORK = {
     ),
 }
 CORS_ALLOW_ALL_ORIGINS = True #배포 시 삭제예정(개발환경 전용 사용)
+
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'debug.log'),
+        },
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'WARNING',  # DEBUG, INFO, WARNING, ERROR, CRITICAL 등으로 설정 가능
+        },
+        'django.db.backends': {
+            'handlers': ['console'],
+            'level': 'ERROR',  # SQL 쿼리 로그를 끄려면 WARNING이나 ERROR로 설정
+        },
+    },
+}
