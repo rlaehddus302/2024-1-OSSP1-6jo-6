@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Cookies from 'js-cookie';
 import classes from './App3.module.css';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,  } from 'react-router-dom';
 
 function App() {
   let navigate = useNavigate();
-  function edit_page(){
-    navigate('/edit');
+  let id = useRef();
+  let password= useRef();
+  function cctv_page(){
+    navigate('/cctv');
   }
   const [IPandPORT, setIPandPORT] = useState([]);
 
@@ -37,6 +39,9 @@ function App() {
     Cookies.set('IPandPORT', JSON.stringify(currentData));
     setIPandPORT(currentData); // 상태 업데이트
     alert('저장되었습니다');
+
+    id.current.value="";
+    password.current.value="";
   };
 
   const show = () => {
@@ -60,13 +65,13 @@ function App() {
           <p className={classes.main}>CCTV의 정보를 입력하세요</p>
           <form onSubmit={submit}>
             <div className={classes.id}>
-              <input type="text" id='id' placeholder='IP' required />
+              <input type="text" id='id' ref={id} placeholder='IP' required />
             </div>
             <div className={classes.password}>
-              <input type="text" id='password' placeholder='PORT' required />
+              <input type="text" id='password' ref={password} placeholder='PORT' required />
             </div>
             <button type='submit'>저장</button>
-            <button type='button' onClick={edit_page}>수정</button>
+            <button type='button' onClick={cctv_page}>CCTV</button>
           </form>
         </div>
       </div>

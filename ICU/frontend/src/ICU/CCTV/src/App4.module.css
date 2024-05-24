@@ -4,6 +4,16 @@ section.section{
   align-items: center;
 }
 
+ul.cctv{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.cctv video{
+  margin: 1em;
+}
+
 ul.alarm{
   text-align: center;
   list-style: none;
