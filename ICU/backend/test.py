@@ -2,7 +2,9 @@ import torch
 import cv2
 import os
 import sys
-
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 # YOLOv5 모델 로드
 #sys.path.insert(0, './2024-1-OSSP1-6jo-6/ICU_YOLO')
 model = torch.hub.load('./backend/yolov5','custom',path='./backend/yolov5/best.pt',source='local', force_reload=True)
