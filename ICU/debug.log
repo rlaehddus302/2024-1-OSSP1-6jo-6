@@ -1,0 +1,856 @@
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2135
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2135
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88065
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88089
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88089
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88089
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88089
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Bad Request: /upload_video/
+"GET /upload_video/ HTTP/1.1" 400 28
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 87845
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 87869
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 85029
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 87869
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 85053
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 84809
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 87869
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88150
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 86, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88174
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 179, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 116, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 93883
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 179, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 116, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 93861
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 179, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 116, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 94214
+Not Found: /
+"GET / HTTP/1.1" 404 2189
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2240
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 30
+Not Found: /
+"GET / HTTP/1.1" 404 2189
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2240
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 30
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 30
+Bad Request: /test/
+Bad Request: /test/
+Bad Request: /test/
+Bad Request: /test/
+Bad Request: /test/
+Bad Request: /test/
+Not Found: /
+"GET / HTTP/1.1" 404 2189
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 28
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 37, in test_upload_image
+    response = request.get(image_url)
+               ^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+"POST /test/ HTTP/1.1" 500 74711
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 37, in test_upload_image
+    response = request.get(image_url)
+               ^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+"POST /test/ HTTP/1.1" 500 74711
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='172.30.1.28', port=8080): Max retries exceeded with url: /video (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 39, in test_upload_image
+    response = requests.get(image_url)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\adapters.py", line 595, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='172.30.1.28', port=8080): Max retries exceeded with url: /video (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+"POST /test/ HTTP/1.1" 500 184957
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='172.30.1.28', port=8080): Max retries exceeded with url: /video (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 39, in test_upload_image
+    response = requests.get(image_url)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\adapters.py", line 595, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='172.30.1.28', port=8080): Max retries exceeded with url: /video (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+"POST /test/ HTTP/1.1" 500 184957
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "C:\Users\kimye\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='172.30.1.28', port=8080): Max retries exceeded with url: /video (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 39, in test_upload_image
+    response = requests.get(image_url)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\requests\adapters.py", line 595, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='172.30.1.28', port=8080): Max retries exceeded with url: /video (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+"POST /test/ HTTP/1.1" 500 184957
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+Bad Request: /test/
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 28
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2240
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"POST /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2240
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"GET /test/ HTTP/1.1" 400 148
+Bad Request: /test/
+"DELETE /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"DELETE /test/ HTTP/1.1" 400 28
+Bad Request: /test/
+"DELETE /test/ HTTP/1.1" 400 28
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 71, in test_upload_image
+    value["timeList"] = [x for x in value["timeList"] if x.id != data]
+                                                         ^^^^
+AttributeError: 'dict' object has no attribute 'id'
+"DELETE /test/ HTTP/1.1" 500 74386
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 71, in test_upload_image
+    value["timeList"] = [x for x in value["timeList"] if x.id != data]
+                                                         ^^^^
+AttributeError: 'dict' object has no attribute 'id'
+"DELETE /test/ HTTP/1.1" 500 74386
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 71, in test_upload_image
+    value["timeList"] = [x for x in value["timeList"] if x.id != data]
+                                                         ^^^^
+AttributeError: 'dict' object has no attribute 'id'
+"DELETE /test/ HTTP/1.1" 500 74386
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 71, in test_upload_image
+    value["timeList"] = [x for x in value["timeList"] if x.id != data]
+                                                         ^^^^
+AttributeError: 'dict' object has no attribute 'id'
+"DELETE /test/ HTTP/1.1" 500 74386
+Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kimye\SW\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 71, in test_upload_image
+    value["timeList"] = [x for x in value["timeList"] if x.id != data]
+                                                         ^^^^
+AttributeError: 'dict' object has no attribute 'id'
+"DELETE /test/ HTTP/1.1" 500 74386
