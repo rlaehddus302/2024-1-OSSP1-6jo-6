@@ -1,13 +1,11 @@
-import pathlib
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
 import torch
 import cv2
 import mediapipe as mp
 import numpy as np
 import sys
-
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 # YOLOv5 모델 로드
 model = torch.hub.load('./backend/yolov5', 'custom', path='./backend/yolov5/best.pt', source='local', force_reload=True)
 
@@ -74,9 +72,12 @@ def classify_pose(landmarks):
     right_knee = get_keypoint(landmarks, mp_pose.PoseLandmark.RIGHT_KNEE)
     left_eye = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_EYE)
     right_eye = get_keypoint(landmarks, mp_pose.PoseLandmark.RIGHT_EYE)
-    left_ankle = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_ANKLE)
-    right_ankle = get_keypoint(landmarks, mp_pose.PoseLandmark.RIGHT_ANKLE)
+    left_ear = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_EAR)
+    right_ear = get_keypoint(landmarks, mp_pose.PoseLandmark.RIGHT_EAR)
+    #left_ankle = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_ANKLE)
+    #right_ankle = get_keypoint(landmarks, mp_pose.PoseLandmark.RIGHT_ANKLE)
     
+
     if (left_shoulder[2] > 0.5 and right_shoulder[2] > 0.5 and
         left_hip[2] > 0.5 and right_hip[2] > 0.5 and
         (left_knee[2] > 0.5 or right_knee[2] > 0.5)):
@@ -89,27 +90,36 @@ def classify_pose(landmarks):
         mid_hip_x, mid_hip_y = mid_coordinate(left_hip, right_hip)
         x_diff = abs(mid_shoulder_x - mid_knee_x)
         y_diff = abs(mid_shoulder_y - mid_knee_y)
-        
- # Extract the x and y coordinates
-        eye_mid_y = mid_coordinate(left_eye, right_eye)[1]
-        left_ankle_x, left_ankle_y = left_ankle[:2]
-        right_ankle_x, right_ankle_y = right_ankle[:2]
 
-        # Calculate min and max x and y values
-        x_values = [left_ankle_x, right_ankle_x, mid_coordinate(left_eye, right_eye)[0]]
-        y_values = [left_ankle_y, right_ankle_y, eye_mid_y]
-
-        x_min, x_max = min(x_values), max(x_values)
-        y_min, y_max = min(y_values), max(y_values)
-
-        # Calculate box_ratio
-        box_ratio = (y_max - y_min) / (x_max - x_min)
-                
         angle = calculate_angle((mid_shoulder_x, mid_shoulder_y), (mid_hip_x, mid_hip_y), (mid_knee_x, mid_knee_y))
         if (left_side_sorted or right_side_sorted) and 2 * x_diff < y_diff and angle > 120:
             return "Standing"
-        elif box_ratio >= 3:
-            return "Standing"
+        
+        
+        if (left_knee[2] > 0.5 and right_knee[2] > 0.5 and
+            (left_eye[2] > 0.5 or right_eye[2] > 0.5) and 
+            (left_ear[2] > 0.5 or right_ear[2] > 0.5)):
+            # Extract the x and y coordinates
+            mid_eye_x, mid_eye_y = mid_coordinate(left_eye, right_eye)
+            mid_ear_x, mid_ear_y = mid_coordinate(right_ear, right_ear)
+            left_shouler_x, left_shouler_y = left_shoulder[:2]
+            right_shoulder_x, right_shoulder_y = right_shoulder[:2]
+            left_hip_x, left_hip_y = left_hip[:2]
+            right_hip_x, right_hip_y = right_hip[:2]
+            left_knee_x, left_knee_y = left_knee[:2]
+            right_knee_x, right_knee_y = right_knee[:2]
+
+            # Calculate min and max x and y values
+            x_values = [mid_eye_x, mid_ear_x, left_shouler_x, right_shoulder_x, left_hip_x, right_hip_x, left_knee_x, right_knee_x]
+            y_values = [mid_eye_y, mid_ear_y, left_shouler_y, right_shoulder_y, left_hip_y, right_hip_y, left_knee_y, right_knee_y]
+
+            x_min, x_max = min(x_values), max(x_values)
+            y_min, y_max = min(y_values), max(y_values)
+
+            # Calculate box_ratio
+            box_ratio = (y_max - y_min) / (x_max - x_min)
+            if box_ratio >= 2:
+                return "Standing"
     return "Not Standing"
 
 def get_landmark(image):
@@ -125,9 +135,7 @@ def get_landmark(image):
         mp_drawing.draw_landmarks(
             annotated_image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
         
-    #     # 자세 분류 및 텍스트 표시
-    #     pose_classification = classify_pose(results.pose_landmarks)
-    # return pose_classification
+    # 자세 분류 및 텍스트 표시
     return classify_pose(results.pose_landmarks)
 
 def calculate_center(coord):
@@ -197,6 +205,8 @@ def track_people_from_video(video_path, output_set):
                         pose_classification = get_landmark(person_image)
                         if pose_classification == "Not Standing":
                             alert_message = "Detected stationary person!"
+                            print("="*20,"\n",alert_message,"\n","="*20)
+                            return alert_message
                     except Exception as e:
                         print(e)
                 else:

@@ -1,0 +1,305 @@
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2135
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2135
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\test.py", line 87, in track_people_from_video
+    return alert_message
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'alert_message' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 88762
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 184, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 121, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 102915
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 193, in track_people_from_video
+    cv2.imshow(frame)
+TypeError: imshow() missing 1 required positional argument: 'mat'
+"POST /upload_video/ HTTP/1.1" 500 85652
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 184, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 121, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 102484
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 184, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 121, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 100691
+Not Found: /
+"GET / HTTP/1.1" 404 2084
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2135
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 186, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 121, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 102968
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 186, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 121, in get_landmark
+    return pose_classification
+           ^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pose_classification' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 100953
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 187, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 122, in get_landmark
+    return classify_pose(results.pose_landmarks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 73, in classify_pose
+    left_shoulder = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_SHOULDER)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 42, in get_keypoint
+    return landmarks.landmark[index].x, landmarks.landmark[index].y, landmarks.landmark[index].visibility
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'landmark'
+"POST /upload_video/ HTTP/1.1" 500 108799
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 187, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 122, in get_landmark
+    return classify_pose(results.pose_landmarks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 73, in classify_pose
+    left_shoulder = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_SHOULDER)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 42, in get_keypoint
+    return landmarks.landmark[index].x, landmarks.landmark[index].y, landmarks.landmark[index].visibility
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'landmark'
+"POST /upload_video/ HTTP/1.1" 500 110795
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 187, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 122, in get_landmark
+    return classify_pose(results.pose_landmarks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 73, in classify_pose
+    left_shoulder = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_SHOULDER)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 42, in get_keypoint
+    return landmarks.landmark[index].x, landmarks.landmark[index].y, landmarks.landmark[index].visibility
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'landmark'
+"POST /upload_video/ HTTP/1.1" 500 111226
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 187, in track_people_from_video
+    pose_classification = get_landmark(person_image)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 122, in get_landmark
+    return classify_pose(results.pose_landmarks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 73, in classify_pose
+    left_shoulder = get_keypoint(landmarks, mp_pose.PoseLandmark.LEFT_SHOULDER)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 42, in get_keypoint
+    return landmarks.landmark[index].x, landmarks.landmark[index].y, landmarks.landmark[index].visibility
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'landmark'
+"POST /upload_video/ HTTP/1.1" 500 108799
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 172, in track_people_from_video
+    coord
+UnboundLocalError: cannot access local variable 'coord' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 86434
+Not Found: /upload_video../
+"POST /upload_video../ HTTP/1.1" 404 2148
