@@ -1,10 +1,9 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import classes from './Table.module.css'
 
 export default function Table()
 {
-    const [content,setContent]=useState([{id:1, camera: 1, day: "2024-05-05", time: "12:00:01"},
-    {id:2, camera: 2, day: "2024-05-05", time: "13:00:01"}])
+    const [content,setContent]=useState([])
     function deletion(id)
     {
         const temp = content.filter((element)=>{
@@ -13,7 +12,50 @@ export default function Table()
             )
         })
         setContent(temp)
+        getDelete(id)
     }
+    async function getDelete(id) 
+    {
+        try {
+            const response = await fetch('http://localhost:8000/test/',{ 
+            method : 'DELETE',
+            headers : {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(id),
+          });
+        }
+        catch (error) 
+        {
+          console.error('Error:', error);
+          alert('Error: An error occurred while getting the data.');
+        }
+    }
+    async function getData() 
+    {
+        try 
+        {
+          const response = await fetch('http://localhost:8000/test/')
+          const data = await response.json();
+          if (response.ok) 
+            {
+                setContent((currentContent) => 
+                {
+                  return [...data.timeList];
+                });
+               
+            }
+        } 
+        catch (error) 
+        {
+          console.error('Error:', error);
+          alert('Error: An error occurred while getting the data.');
+        }
+    }
+      useEffect(() => 
+        {
+            getData()
+        }, []);
     return(
         <>
             <table className={classes.table}>

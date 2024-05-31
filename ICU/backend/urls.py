@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.urls import path
 from .views import upload_and_process_video
+from .views import test_upload_image
 
 urlpatterns = [
     path('upload_video/', upload_and_process_video, name='upload_video'),
+    path('', test_upload_image),
 ]

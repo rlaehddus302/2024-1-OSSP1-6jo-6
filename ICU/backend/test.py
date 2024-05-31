@@ -2,6 +2,10 @@ import torch
 import cv2
 import os
 import sys
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+
 
 # YOLOv5 모델 로드
 #sys.path.insert(0, './2024-1-OSSP1-6jo-6/ICU_YOLO')
@@ -38,11 +42,11 @@ def is_stationary(coord1, coord2, threshold=0.25):
 def track_people_from_video(video_path, output_set):
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
-    frame_interval = int(fps)  # 1초마다 프레임 추출
+    frame_interval = int(1)  # 1초마다 프레임 추출
 
     tracked_people = []
     output_index = 1
-
+    alert_message=None
     frame_count = 0
     while cap.isOpened():
         ret, frame = cap.read()
@@ -73,7 +77,8 @@ def track_people_from_video(video_path, output_set):
             for person in tracked_people:
                 if len(person) >= 10 and person[-1][1] >= 7:
                     stationary_people_coord = person[-1][0]
-                    alert_message = "Detected stationary person!"
+                    alert_message = "취객 감지"
+                    print(alert_message , ' ========= ')
                 else:
                     new_tracked_people.append(person)
             tracked_people = new_tracked_people
