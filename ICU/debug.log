@@ -283,3 +283,23 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'landmark'
 "POST /upload_video/ HTTP/1.1" 500 108799
+Internal Server Error: /upload_video/
+Traceback (most recent call last):
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\views.py", line 21, in upload_and_process_video
+    alert_message = track_people_from_video(file_path, output_set)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Steve JIN\Desktop\ICU\2024-1-OSSP1-6jo-6\ICU\backend\tests.py", line 172, in track_people_from_video
+    coord
+UnboundLocalError: cannot access local variable 'coord' where it is not associated with a value
+"POST /upload_video/ HTTP/1.1" 500 86434
+Not Found: /upload_video../
+"POST /upload_video../ HTTP/1.1" 404 2148

@@ -4,7 +4,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
-from .tests import track_people_from_video  # 함수가 있는 파일에서 가져오기
+from .test import track_people_from_video  # 함수가 있는 파일에서 가져오기
 
 @csrf_exempt
 def upload_and_process_video(request):
