@@ -24,7 +24,7 @@ function App() {
           <p className={classes.main}>이 icu 프로그램은 cctv 화면과 연동하여 노숙 취객 탐지를 제공하는 서비스입니다. 
             사람을 자동으로 인식하고 내장된 알고리즘이 움직임이 없다 판단하면 신고 알림을 사용자에게 알려줍니다. </p>
           <button style={{backgroundColor:"#5555ee"}} onClick={cctv_page}>cctv</button>
-          <button style={{backgroundColor:"#5555ee"}} onClick={setting_page}>정보 수정</button>
+          <button style={{backgroundColor:"#5555ee"}} onClick={setting_page}>정보 입력</button>
         </div>
       </section>
     </>

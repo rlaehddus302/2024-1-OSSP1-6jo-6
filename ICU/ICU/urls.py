@@ -22,5 +22,7 @@ import backend.views as views
 
 urlpatterns = [
     path('upload_video/', views.upload_and_process_video, name='upload_video'),
+    path('test/', views.test_upload_image),
+
 ]
 

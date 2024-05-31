@@ -4,6 +4,16 @@ section.section{
   align-items: center;
 }
 
+ul.cctv{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.cctv img{
+  margin: 1em;
+}
+
 ul.alarm{
   text-align: center;
   list-style: none;
@@ -37,7 +47,7 @@ ul.alarm li p .right{
   cursor: pointer;
 }
 
-video {
+img {
   width: 640px; /* 너비를 640픽셀로 설정 */
   height: 360px; /* 높이를 360픽셀로 설정 */
   object-fit: cover; /* 비디오의 비율을 유지하면서 요소 크기에 맞게 조정 */
@@ -58,7 +68,7 @@ video {
     width: 28em;
   }
 
-  video {
+  img {
     width: 540px; /* 너비를 640픽셀로 설정 */
     height: 260px; /* 높이를 360픽셀로 설정 */
     object-fit: cover; /* 비디오의 비율을 유지하면서 요소 크기에 맞게 조정 */
@@ -80,7 +90,7 @@ video {
     width: 18em;
   }
 
-  video {
+  img {
     width: 380px; /* 너비를 640픽셀로 설정 */
     height: 260px; /* 높이를 360픽셀로 설정 */
     object-fit: cover; /* 비디오의 비율을 유지하면서 요소 크기에 맞게 조정 */
