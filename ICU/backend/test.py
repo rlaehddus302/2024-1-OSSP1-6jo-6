@@ -160,11 +160,11 @@ def is_stationary(coord1, coord2, threshold=0.25):
 def track_people_from_video(video_path, output_set):
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
-    frame_interval = int(1)  # 1초마다 프레임 추출
+    frame_interval = int(fps)  # 1초마다 프레임 추출
 
     tracked_people = []
     output_index = 1
-    alert_message=None
+
     frame_count = 0
     alert_message = None
 
@@ -204,7 +204,9 @@ def track_people_from_video(video_path, output_set):
                         person_image = frame[y1:y2, x1:x2]
                         pose_classification = get_landmark(person_image)
                         if pose_classification == "Not Standing":
-                            alert_message = "취객 감지"
+                            alert_message = "Detected stationary person!"
+                            print("="*20,"\n",alert_message,"\n","="*20)
+                            return alert_message
                     except Exception as e:
                         print(e)
                 else:
